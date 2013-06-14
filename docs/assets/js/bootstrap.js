@@ -1191,8 +1191,8 @@
 
         pos = this.getPosition()
 
-        actualWidth = $tip[0].offsetWidth
-        actualHeight = $tip[0].offsetHeight
+        actualWidth = $tip.outerWidth(true)
+        actualHeight = $tip.outerHeight(true)
 
         switch (placement) {
           case 'bottom':
@@ -1228,8 +1228,8 @@
         .addClass(placement)
         .addClass('in')
 
-      actualWidth = $tip[0].offsetWidth
-      actualHeight = $tip[0].offsetHeight
+      actualWidth = $tip.outerWidth(true)
+      actualHeight = $tip.outerHeight(true)
 
       if (placement == 'top' && actualHeight != height) {
         offset.top = offset.top + height - actualHeight
